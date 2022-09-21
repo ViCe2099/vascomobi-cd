@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: vasco-finalapp
+  name: vasco-finalapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vasco-finalapp
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: vasco-finalapp
+    spec:
+      containers:
+      - image: vccardoso/vascomobiwebapp:v9
+        name: vascomobiwebapp
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
