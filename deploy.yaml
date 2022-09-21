@@ -6,7 +6,7 @@ metadata:
     app: vasco-finalapp
   name: vasco-finalapp
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: vasco-finalapp
